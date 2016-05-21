@@ -89,6 +89,4 @@ public class Maze extends Board {
     		notifyObservers(cellId);
     	}
     }
-    
-//    ...
 }

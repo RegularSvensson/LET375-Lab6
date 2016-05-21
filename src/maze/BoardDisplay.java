@@ -26,6 +26,10 @@ public class BoardDisplay extends Board implements Observer {
 		// compute offset to center it
 		rowOffset = (height-maxRow*gridSize)/2 + 2;
 		colOffset = (width-maxCol*gridSize)/2 + 2;
+		// Initialize display
+		drawGrid();
+		knockDownWall(0, Point.Direction.LEFT);
+		knockDownWall(maxCell - 1, Point.Direction.RIGHT);
 	}
 	
 	private void drawGrid() {

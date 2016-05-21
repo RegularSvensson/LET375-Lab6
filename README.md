@@ -13,6 +13,5 @@ May 21st 2016
 ##AUTHORS: 
 Mona Khoshoi, Elias Svensson
 ###COMMENTS:
-...
-
+Challenging task. Had to ask for help multiple times to implement specific methods. Worked hard to comment developed code to feel confident in logical steps of implementation.
 ------------------------------------------------------------------------

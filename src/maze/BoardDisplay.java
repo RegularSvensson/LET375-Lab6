@@ -81,7 +81,17 @@ public class BoardDisplay extends Board implements Observer {
 		canvas.drawLine( colOffset + c1, rowOffset + r1, colOffset + c2, rowOffset + r2 );
 	}
 	    
+	@SuppressWarnings("unchecked")
 	public void update(Observable o, Object arg) {
-//		 Develop this method!
+		// Check if arg is instance of Pair
+		if(arg instanceof Pair) {
+			// Knock down wall
+			Pair<Integer, Point.Direction> pair = (Pair<Integer, Point.Direction>) arg;
+			knockDownWall(pair.first, pair.second);
+		}
+		// Else, check if arg is instance of Integer
+		else if (arg instanceof Integer)
+			// Fill cell
+			fillCell((Integer) arg);
 	}
 }
